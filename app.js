@@ -1,8 +1,8 @@
 var pres = document.createElement("img");
 
-var potus = document.getElementById("my_button");
+let potus = document.getElementById("my_button");
 
-potus.addEventListener("click", ()=>{
+potus.addEventListener("click",()=> {
 
 }
 
