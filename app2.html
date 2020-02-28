@@ -3,8 +3,11 @@
 <body>
     <h4></h4>
     <select id="presidents"></select>
+    <div>
+        <button onclick="showImage()" id="my_button">Show President</button>
+    </div>
 
-    <span id="demo">CLICK HERE</span>
+    <span id="demo"></span>
 
     <script>
         //for( presi in presidents ) {
@@ -211,7 +214,7 @@
         }
 
 
-        function myFunction() {
+        function showImage() {
             document.getElementById("demo").innerHTML = "<br /><img src='" + presidents[select.value].image + "' width='200'><p><h4>" + presidents[select.value].name + "</h4></p>";
 
             //Look up sin text
@@ -219,9 +222,13 @@
         }
 
         document.getElementById("demo").onclick = function() {
-            myFunction()
+            showImage()
         };
 
+        let blah = document.getElementById("my_button").textContent;
+        blah.addEventListener("click", () => {
+        showImage();
+});
     </script>
 </body>
 
