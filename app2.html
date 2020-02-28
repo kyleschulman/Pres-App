@@ -18,6 +18,7 @@
 //}
 
                 var presidents = [
+                    {name: 'No president avaible'},
                     {name: 'Washington, George', image:'https://www.history.com/.image/t_share/MTU3OTIzNjc4MTIxMzcxNTk4/the-things-george-washington-worried-about-are-happening-todays-featured-photo.jpg'},
                     {name: 'Adams, John', image:'https://cropper.watch.aetnd.com/public-content-aetn.video.aetnd.com/video-thumbnails/AETN-History_VMS/21/115/History_Political_Career_of_John_Adams_rev_1SF_HD_1104x622-16x9.jpg?w=1440'},
                     {name: 'Jefferson, Thomas', image:'https://upload.wikimedia.org/wikipedia/commons/b/b1/Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29%28cropped%29.jpg'},
@@ -34,7 +35,7 @@
                     {name: 'Pierce, Franklin', image:'https://www.onthisday.com/images/people/franklin-pierce-medium.jpg'},
                     {name:'Buchanan, James', image:'https://www.history.com/.image/c_fit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_620/MTU3ODc5MDg2Njk2NzAzNzEx/portrait-of-james-buchanan.jpg'},
                     {name: 'Lincoln, Abraham', image:'https://www.biography.com/.image/t_share/MTU5MDUzMTE0Mzk2MTI0OTUy/abraham-lincoln-1809---18652c-sixteenth-president-of-the-united-states-of-america-photo-by-stock-montagestock-montagegetty-images_promo.jpg'},
-                    {name: 'Johnson, Andrew', image:,'https://upload.wikimedia.org/wikipedia/commons/e/e6/Andrew_Johnson_photo_portrait_head_and_shoulders%2C_c1870-1880-Edit1.jpg'},
+                    {name: 'Johnson, Andrew', image:'https://upload.wikimedia.org/wikipedia/commons/e/e6/Andrew_Johnson_photo_portrait_head_and_shoulders%2C_c1870-1880-Edit1.jpg'},
                     {name: 'Grant, Ulysses S.', image:'https://www.biography.com/.image/t_share/MTE5NTU2MzE2MjM2Nzc2OTcx/ulysses-s-grant-9318285-1-402.jpg'},
                     {name: 'Hayes, Rutherford Birchard', image:'https://www.biography.com/.image/t_share/MTE5NDg0MDU0OTkxNDM5Mzc1/rutherford-b-hayes-9332440-1-402.jpg'},
                     {name: 'Garfield, James Abram', image:'https://upload.wikimedia.org/wikipedia/commons/1/1f/James_Abram_Garfield%2C_photo_portrait_seated.jpg'},
@@ -48,7 +49,7 @@
                     {name: 'Wilson, Woodrow', image:'https://upload.wikimedia.org/wikipedia/commons/5/53/Thomas_Woodrow_Wilson%2C_Harris_%26_Ewing_bw_photo_portrait%2C_1919.jpg'},
                     {name: 'Harding, Warren Gamaliel', image:'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Warren_G_Harding-Harris_%26_Ewing.jpg/1200px-Warren_G_Harding-Harris_%26_Ewing.jpg'},
                     {name: 'Coolidge, Calvin', image:'https://upload.wikimedia.org/wikipedia/commons/a/a3/Calvin_Coolidge_cph.3g10777_%28cropped%29.jpg'},
-                    {name: 'Hoover, Herbert Clark', image'https://www.biography.com/.image/t_share/MTE5NTU2MzE2MjUwODY3MjEx/herbert-hoover-9343371-1-402.jpg'},
+                    {name: 'Hoover, Herbert Clark', image:'https://www.biography.com/.image/t_share/MTE5NTU2MzE2MjUwODY3MjEx/herbert-hoover-9343371-1-402.jpg'},
                     {name: 'Roosevelt, Franklin Delano', image:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/FDR_1944_Color_Portrait.jpg/1200px-FDR_1944_Color_Portrait.jpg'},
                     {name: 'Truman, Harry', image:'https://upload.wikimedia.org/wikipedia/commons/0/0b/TRUMAN_58-766-06_%28cropped%29.jpg'},
                     {name: 'Eisenhower, Dwight David', image:'https://cdn.britannica.com/s:800x450,c:crop/31/172731-138-3612D671/overview-Dwight-D-Eisenhower.jpg'},
@@ -67,7 +68,6 @@
 ];
 select = document.getElementById( 'presidents' );
 
-alert(presidents.length);
 for(var i=0; i<=presidents.length; i++){
 
    select.add( new Option( i ) );
